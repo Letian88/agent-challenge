@@ -4,12 +4,12 @@
 
 ## 比赛
 
-> 题目已于 2026-09-18 20:00 在飞书群「DP-Arena内部赛」发布，要点见下表备注与 `openspec/changes/` 下的对应变更。
+> 两道任务已从《DP Arena 比赛参赛指南》给出的 Playground challenge ID 实际下载；要点见下表与 `openspec/changes/`。题包未给出正式截止日期。
 
 | 比赛 | 链接 | 备注 |
 |---|---|---|
-| 比赛 A（DPA部署赛） | https://dptechnology.feishu.cn/wiki/N9STwPrFEiDLXbkSGZxcp4mFn2e | 同一 DPA4C 模型、固定 1024 原子周期体系、单张 PPU，方向为 CUDA 算子迁移与优化；结果正确前提下比完整推理速度；交付源码 patch + 测试结果 + 改动说明 + 复现镜像；比赛页面 https://play.bohrium.com/competitions/dpa |
-| 比赛 B（LLM 部署赛） | https://dptechnology.feishu.cn/wiki/Pda8wY9NFiXS7xkN75qcESzXnvU | 固定 GLM-5.3-Flash（320B-A18B）MoE 模型与统一 A100 卡额度，优化部署配置提升模型响应指标；评测题为可见的真实线上 query；交付服务镜像 + 启动/运行配置；比赛页面 https://play.bohrium.com/llm-arena/competitions/llm-deploy-arena |
+| 比赛 A（DPA部署赛） | https://dptechnology.feishu.cn/wiki/NevpwcEEGi2deek51TMcNTvDnAh | **DPA4C Nano 单 PPU 生产部署优化赛**（challenge `optimize-the-complete-dpa4c-nano-lammps-md-step-ac-6a1e56aa`）：单张 PPU810E 96GB，CuNi/Si/MgO 共九个 MD 场景；全部正确后按九题加速比几何平均排名。当前下载包缺题面要求的 `instruction.md`，资源说明存在 v4/v5 冲突，且冻结环境为 `release_ready: false`；未澄清前不得启动收费沙箱。比赛页面 https://play.bohrium.com/competitions/dpa |
+| 比赛 B（LLM 部署赛） | https://dptechnology.feishu.cn/wiki/NevpwcEEGi2deek51TMcNTvDnAh | **推理服务评测赛**（challenge `llm-challenge-arena-v1`）：固定 GLM-5.3-Flash 与 8×A100-SXM4-80GB；能力门通过后，先比 `N@SLO`，同档再比 `TPOT`。交付 `/app/submission/submission.json` 指向授权镜像及启动命令，并实现 `/chat/completions`、`/generate`、`/flush_cache`；评分元数据与详细题面存在冲突，待主办方确认。比赛页面 https://play.bohrium.com/llm-arena/competitions/llm-deploy-arena-v1 |
 
 ## 仓库边界
 
@@ -31,7 +31,7 @@
 | 规格 / 变更管理 | `openspec`（本仓库） |
 | Bohrium 资源（文件 / 数据集 / 任务 / 节点等） | `bohr` CLI |
 | 数据集下载 | `wenyon`（`wenyon-cli`） |
-| 算力资源 / Arena Team | `trisol`（team 待管理员审批） |
+| 算力资源 / Arena Team | `trisol`（当前账号的 `arena` 申请已 approved；执行任务前仍实时检查 team 与 quota） |
 
 ## OpenSpec 安装（新成员必读）
 

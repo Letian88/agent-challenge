@@ -13,7 +13,7 @@ context: |
   ## 工具链约定
   - Bohrium 资源管理（文件 / 数据集 / 任务 / 节点）：使用 bohr CLI
   - 数据集下载：使用 wenyon（wenyon-cli）
-  - 算力资源：使用 trisol 的 arena team（team 待管理员审批，审批前不要阻塞其他工作）
+  - 算力资源：使用 trisol 的 arena team（当前账号已获批；每次执行前仍实时检查成员关系与 quota）
 
   ## 协作约定
   - 本仓库是团队的单一事实来源，所有计划、规格、变更都通过 git 共享
