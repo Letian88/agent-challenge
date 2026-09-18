@@ -2,7 +2,7 @@
 
 ## Context
 
-参赛契约见 proposal.md 与 `specs/competition-b-llm-deploy/spec.md`。题包正文定义了服务接口、能力门、固定轨迹压测与提交 schema；正式负载内容和规模隐藏，公开开发集只能做相对回归。`challenge.json.abstract`、详细正文和 `challenge.json.scoring` 对排名方式的描述不一致，题包也没有正式截止日期。
+参赛契约见 proposal.md 与 `specs/competition-b-llm-deploy/spec.md`。题包正文定义了服务接口、能力门、固定轨迹压测与提交 schema；正式负载内容和规模隐藏，公开开发集只能做相对回归。`challenge.json.abstract`、详细正文和 `challenge.json.scoring` 对排名方式的描述不一致。比赛群开赛消息 `om_x100b65e63298b0a0b25d0fff56b98ad` 确认 2026-09-18 20:00 开赛；21:35–21:38 的群内答复确认单次评测约 10 小时、LLM 每天最多提交 3 次、赛期至少一周起步，但正式结束日期仍由组织方动态调整并提前通知。
 
 ## Goals / Non-Goals
 
